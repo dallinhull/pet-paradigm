@@ -10,7 +10,7 @@ const DogMedical: React.FC = () => {
         You should always consult with your veterinarian, but there is a core set of vaccines that are typically recommended. Vaccines that reduce the exposure risk to things such as hepatitis, rabies, and parvovirus. Others may be determined by your vet depending on the environment in which the dog resides. Some of these include Bordetella bronchiseptica, Borrelia burgdorferi, and Leptospira bacteria.
       </p>
       <img
-        src={MedicalImage} // Replace this with the actual landscape image URL
+        src={MedicalImage}
         alt="Dog taking medicine"
         className="dog-vet"
       />

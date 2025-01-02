@@ -1,38 +1,39 @@
 .health-section {
-  display: flex; /* Flexbox for horizontal alignment */
-  flex-direction: row; /* Default layout for larger screens */
-  width: 100%; /* Full width */
-  height: auto; /* Adjust height for smaller screens */
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
   background-color: white;
-  padding: 2rem 1rem; /* Adjust padding for smaller screens */
-  box-sizing: border-box; /* Include padding in width/height calculation */
+  padding: 2rem 1rem;
+  box-sizing: border-box;
 }
+
 .health-left-container {
-width: 50%; /* Take up 50% of the container's width */
-display: flex; /* Use flexbox for vertical stacking */
-flex-direction: column; /* Stack items vertically */
-justify-content: center; /* Space between items */
-align-items: center; /* Align items to the center */
-padding: 2rem; /* Adjust padding for smaller screens */
-box-sizing: border-box; /* Include padding in width/height calculation */
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
 }
 
 .health-right-container {
-  width: 50%; /* Take up 50% of the container's width */
-  display: flex; /* Use flexbox for vertical stacking */
-  flex-direction: column; /* Stack items vertically */
-  justify-content: center; /* Space between items */
-  align-items: center; /* Align items to the center */
-  padding: 2rem; /* Adjust padding for smaller screens */
-  box-sizing: border-box; /* Include padding in width/height calculation */
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
 }
 
 .health-header, .health-description, .pexpert-button-container {
-  text-align: center; /* Center-align text */
+  text-align: center;
 }
 
 .health-header h2 {
-  color: black; /* Heading color */
+  color: black;
 }
 
 .health-description {
@@ -40,92 +41,90 @@ box-sizing: border-box; /* Include padding in width/height calculation */
 }
 
 .health-description p {
-  font-size: 1rem; /* Adjust paragraph font size */
-  color: black; /* Light text for readability */
+  font-size: 1rem;
+  color: black;
   max-width: 600px;
 }
 
 .home-health-button-container {
-  display: flex; /* Ensure button is displayed correctly */
-  justify-content: center; /* Center-align the button */
+  display: flex;
+  justify-content: center;
 }
 
 .health-button {
-  text-decoration: none; /* Remove underline */
-  background-color: #676767; /* Button background color */
-  color: white; /* Button text color */
-  padding: 0.75rem 1.5rem; /* Button padding */
-  border-radius: 5px; /* Rounded corners */
-  font-weight: bold; /* Bold text */
-  transition: background-color 0.3s, transform 0.2s; /* Smooth hover effect */
+  text-decoration: none;
+  background-color: #676767;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 .pexpert-button:hover {
-  background-color: #6699cc; /* Darker shade on hover */
-  transform: scale(1.05); /* Slight zoom on hover */
+  background-color: #6699cc;
+  transform: scale(1.05);
 }
 
 .health-right-container {
-  width: 50%; /* Take up the other 50% of the container's width */
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .health-image {
-  width: 100%; /* Make image take up full width */
+  width: 100%;
   max-width: 650px;
-  height: auto; /* Maintain aspect ratio */
-  object-fit: cover; /* Ensure image covers the container */
+  height: auto;
+  object-fit: cover;
 }
 
-/* Media Query for Mobile Devices */
 @media (max-width: 768px) {
   .health-section {
-      flex-direction: column; /* Stack containers vertically */
-      height: auto; /* Adjust height dynamically */
-      padding: 1rem; /* Adjust padding for smaller screens */
-      min-width:450px;
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+    min-width: 450px;
   }
 
   .health-left-container, .health-right-container {
-      width: 100%; /* Full width for mobile */
-      padding: 1rem; /* Adjust padding */
-      box-sizing: border-box; /* Include padding in width */
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
   }
 
   .health-header h2 {
-      font-size: 1.5rem; /* Adjust font size for smaller screens */
+    font-size: 1.5rem;
   }
 
   .health-description p {
-      font-size: 1rem; /* Adjust font size for readability */
+    font-size: 1rem;
   }
 
   .pexpert-button {
-      padding: 0.5rem 1rem; /* Adjust button size */
-      font-size: 0.9rem; /* Adjust button font size */
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
   }
 
   .health-image {
-      max-width: 350px;
-      height: auto; /* Maintain aspect ratio */
-      margin: 0 auto; /* Center the image */
+    max-width: 350px;
+    height: auto;
+    margin: 0 auto;
   }
 }
 
-
 @media (max-width: 480px) {
   .health-section {
-    padding: 1rem; /* Reduce padding further for mobile */
-    min-width: 450px
+    padding: 1rem;
+    min-width: 450px;
   }
 
   .health-description p {
-    font-size: 0.85rem; /* Adjust paragraph font size for mobile */
+    font-size: 0.85rem;
   }
 
   .health-image {
-    min-width: 400px; /* Reduce image size for mobile */
+    min-width: 400px;
   }
 }

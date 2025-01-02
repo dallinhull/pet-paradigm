@@ -134,17 +134,18 @@ const PetForm = () => {
           </div>
 
           <div className="form-group">
-            <label className="form-label">
+            <label  htmlFor="timezone" className="form-label">
               Your Time Zone
             </label>
             <select
+              id="timezone"
               name="timezone"
               value={formData.timezone}
               onChange={handleChange}
               className={`form-select ${formData.timezone ? 'filled' : ''}`}
               required
             >
-              <option value="">Select Time Zone</option>
+              <option role="presentation">Select Time Zone</option>
               <option value="PT">PT</option>
               <option value="MT">MT</option>
               <option value="CT">CT</option>
@@ -169,17 +170,18 @@ const PetForm = () => {
           </div>
 
           <div className="form-group">
-            <label className="form-label">
+            <label htmlFor="petType" className="form-label">
               Pet Type
             </label>
             <select
+              id="petType"
               name="petType"
               value={formData.petType}
               onChange={handleChange}
               className={`form-select ${formData.petType ? 'filled' : ''}`}
               required
             >
-              <option value="">Select Pet Type</option>
+              <option role="presentation">Select Pet Type</option>
               <option value="dog">Dog</option>
               <option value="cat">Cat</option>
               <option value="bird">Bird</option>

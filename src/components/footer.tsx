@@ -1,19 +1,16 @@
 import React from 'react';
-import '../css/footer.css';  // Import the corresponding CSS for the footer
+import '../css/footer.css';
 import ParadigmLogo from '../assets/paradigm-logo.png'
 
 const Footer: React.FC = () => {
   return (
     <footer>
       <div className="footer-container">
-        {/* Logo Container (top-right) */}
         <div className="footer-logo">
           <img src={ParadigmLogo} alt="Logo" />
         </div>
 
-        {/* Doormat Navigation */}
         <div className="footer-nav">
-          {/* Home Section */}
           <div className="footer-nav-item">
             <a href="/" className="footer-nav-link">Home</a>
             <ul>
@@ -24,7 +21,6 @@ const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Dogs Section */}
           <div className="footer-nav-item">
             <a href="/dogs" className="footer-nav-link">Dogs</a>
             <ul>
@@ -35,7 +31,6 @@ const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Cats Section */}
           <div className="footer-nav-item">
             <a href="/cats" className="footer-nav-link">Cats</a>
             <ul>
@@ -47,7 +42,6 @@ const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Birds Section */}
           <div className="footer-nav-item">
             <a href="/birds" className="footer-nav-link">Birds</a>
             <ul>
@@ -56,7 +50,6 @@ const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Pexpert Section */}
           <div className="footer-nav-item">
             <a href="/pexpert" className="footer-nav-link">Pexpert Consultation</a>
           </div>

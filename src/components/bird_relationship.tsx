@@ -4,7 +4,7 @@ import birdRelationshipImage from "../assets/bird-relationship.jpg"
 
 const BirdRelationship: React.FC = () => {
   return (
-    <div className="relationship-section"> <a href="#relational"></a>
+    <div className="relationship-section">
       <div className="relationship-left-container">
         <div className="relationship-header">
           <h2>Relational Needs</h2>

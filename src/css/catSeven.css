@@ -1,120 +1,122 @@
 .seven-section {
-  display: flex; /* Flexbox for horizontal alignment */
-  flex-direction: row; /* Default layout for larger screens */
-  width: 100%; /* Full width */
+  display: flex;
+  flex-direction: row;
+  width: 100%;
   min-width: 450px;
-  height: auto; /* Adjust height for smaller screens */
+  height: auto;
   background-color: #003B6D;
-  padding: 2rem 1rem; /* Adjust padding for smaller screens */
-  box-sizing: border-box; /* Include padding in width/height calculation */
+  padding: 2rem 1rem;
+  box-sizing: border-box;
 }
 
-.seven-left-container {
-  width: 50%; /* Take up 50% of the container's width */
-  display: flex; /* Use flexbox for vertical stacking */
-  flex-direction: column; /* Stack items vertically */
-  justify-content: center; /* Space between items */
-  align-items: center; /* Align items to the center */
-  padding: 2rem; /* Adjust padding for smaller screens */
-  box-sizing: border-box; /* Include padding in width/height calculation */
+.seven-left-container,
+.seven-right-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
 }
 
-.seven-header, .seven-description, .seven-pexpert-button-container {
-  text-align: center; /* Center-align text */
+.seven-header,
+.seven-description,
+.seven-pexpert-button-container {
+  text-align: center;
 }
 
 .seven-header h2 {
-  color: #BDBDBD; /* Heading color */
-  font-size: 3rem; /* Adjust font size for smaller screens */
-  margin-bottom: 1rem; /* Add space below the heading */
+  color: #BDBDBD;
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
 .seven-description p {
-  font-size: 1rem; /* Adjust paragraph font size */
-  color: white; /* Light text for readability */
-  margin: 5rem 0; /* Add space below the paragraph */
+  font-size: 1rem;
+  color: white;
+  margin: 5rem 0;
   max-width: 600px;
 }
 
 .seven-pexpert-button-container {
-  display: flex; /* Ensure button is displayed correctly */
-  justify-content: center; /* Center-align the button */
+  display: flex;
+  justify-content: center;
 }
 
 .seven-pexpert-button {
-  text-decoration: none; /* Remove underline */
-  background-color: #676767; /* Button background color */
-  color: white; /* Button text color */
-  padding: 0.75rem 1.5rem; /* Button padding */
-  border-radius: 5px; /* Rounded corners */
-  font-weight: bold; /* Bold text */
-  transition: background-color 0.3s, transform 0.2s; /* Smooth hover effect */
+  text-decoration: none;
+  background-color: #676767;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 .seven-pexpert-button:hover {
-  background-color: #6699cc; /* Darker shade on hover */
-  transform: scale(1.05); /* Slight zoom on hover */
+  background-color: #6699cc;
+  transform: scale(1.05);
 }
 
 .seven-right-container {
-  width: 50%; /* Take up the other 50% of the container's width */
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .seven-image {
-  width: 100%; /* Make image take up full width */
-  max-width: 350px; /* Limit maximum width */
-  height: auto; /* Maintain aspect ratio */
-  object-fit: cover; /* Ensure image covers the container */
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  object-fit: cover;
 }
 
-/* Media Query for Mobile Devices */
+/* Media Query for Tablets and Smaller Screens */
 @media (max-width: 768px) {
   .seven-section {
-      flex-direction: column; /* Stack containers vertically */
-      height: auto; /* Adjust height dynamically */
-      padding: 1rem; /* Adjust padding for smaller screens */
+    flex-direction: column;
+    padding: 1rem;
   }
 
-  .seven-left-container, .seven-right-container {
-      width: 100%; /* Full width for mobile */
-      padding: 1rem; /* Adjust padding */
-      box-sizing: border-box; /* Include padding in width */
+  .seven-left-container,
+  .seven-right-container {
+    width: 100%;
+    padding: 1rem;
   }
 
   .seven-header h2 {
-      font-size: 1.75rem; /* Adjust font size for smaller screens */
+    font-size: 1.75rem;
   }
 
   .seven-description p {
-      font-size: 1rem; /* Adjust font size for readability */
+    font-size: 1rem;
   }
 
   .seven-pexpert-button {
-      padding: 0.5rem 1rem; /* Adjust button size */
-      font-size: 0.9rem; /* Adjust button font size */
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
   }
 
   .seven-image {
-      min-width: 350px;
-      height: auto; /* Maintain aspect ratio */
-      margin: 0 auto; /* Center the image */
+    min-width: 350px;
+    height: auto;
+    margin: 0 auto;
   }
 }
 
-
+/* Media Query for Mobile Devices */
 @media (max-width: 480px) {
   .seven-section {
-    padding: 1rem; /* Reduce padding further for mobile */
+    padding: 1rem;
   }
 
   .seven-description p {
-    font-size: 0.85rem; /* Adjust paragraph font size for mobile */
+    font-size: 0.85rem;
   }
 
   .seven-image {
-    min-width: 350px; /* Reduce image size for mobile */
+    min-width: 350px;
   }
 }

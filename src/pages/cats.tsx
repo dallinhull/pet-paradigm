@@ -7,11 +7,13 @@ import CatOne from '../components/cat_one.tsx';
 import CatSeven from '../components/cat_seven.tsx';
 import CatOld from '../components/cat_old.tsx';
 import Footer from '../components/footer.tsx';
+import Head from '../components/head.tsx';
 
 
 const Cats: React.FC = () => {
   return (
     <div>
+        <Head />
         <Navbar />
         <CatBanner />
         <div id='info'>

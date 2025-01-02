@@ -1,62 +1,61 @@
 .mission-section {
-  width: 100%; /* Full width */
-  height: auto; /* Adjust height for smaller screens */
-  background-color: white; /* Background color */
-  display: flex; /* Flexbox for vertical alignment */
-  flex-direction: column; /* Stack child containers vertically */
-  justify-content: center; /* Center containers vertically */
-  align-items: center; /* Center containers horizontally */
-  padding: 9rem 2rem; /* Reduce padding for smaller screens */
-  box-sizing: border-box; /* Include padding in height/width calculations */
+  width: 100%;
+  height: auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 9rem 2rem;
+  box-sizing: border-box;
 }
 
 .mission-header {
-  text-align: center; /* Center align text */
-  color: #6699cc; /* Heading text color */
+  text-align: center;
+  color: #6699cc;
 }
 
 .mission-header h2 {
-  margin-bottom: 4rem; /* Remove default margin */
+  margin-bottom: 4rem;
 }
 
 .mission-content {
-  text-align: center; /* Center align text */
-  color: #333; /* Dark text color for contrast */
-  margin-top: 1rem; /* Add spacing between header and content */
+  text-align: center;
+  color: #333;
+  margin-top: 1rem;
 }
 
 .mission-content p {
-  font-size: 1.25rem; /* Adjust paragraph size for smaller screens */
-  margin: 0; /* Remove default margin */
+  font-size: 1.25rem;
+  margin: 0;
 }
 
-/* Responsive Styling */
 @media (max-width: 768px) {
   .mission-section {
-    padding: 5rem 1.5rem; /* Reduce padding for tablets */
+    padding: 5rem 1.5rem;
   }
 
   .mission-header h2 {
-    font-size: 1.5rem; /* Smaller font size for tablets */
-    margin-bottom: 2rem
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
   }
 
   .mission-content p {
-    font-size: 0.85rem; /* Adjust paragraph size for tablets */
+    font-size: 0.85rem;
   }
 }
 
 @media (max-width: 480px) {
   .mission-section {
-    padding: 1.5rem 1rem; /* Reduce padding further for small screens */
+    padding: 1.5rem 1rem;
     min-width: 450px;
   }
 
   .mission-header h2 {
-    font-size: 1.25rem; /* Smaller font size for mobile */
+    font-size: 1.25rem;
   }
 
   .mission-content p {
-    font-size: 0.8rem; /* Adjust paragraph size for mobile */
+    font-size: 0.8rem;
   }
 }

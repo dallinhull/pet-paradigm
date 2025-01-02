@@ -1,61 +1,59 @@
 .pexpert-banner {
-  width: 100%; /* Full width */
+  width: 100%;
   min-width: 350px;
-  height: 70vh; /* 70% of viewport height */
-  min-height: 300px; /* Reduce min-height for smaller screens */
-  background-image: url('../assets/pexpert-professional.jpg'); /* Replace with your image */
-  background-size: cover; /* Ensure the image covers the entire area */
-  background-position: center; /* Center the image */
-  display: flex; /* Flexbox for content alignment */
-  align-items: center; /* Center vertically */
-  justify-content: center; /* Center horizontally for smaller screens */
-  padding: 1rem; /* Add some padding */
+  height: 70vh;
+  min-height: 300px;
+  background-image: url('../assets/pexpert-professional.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
 }
 
 .pexpert-banner-content {
-  width: 100%; /* Occupy full width on smaller screens */
-  display: flex; /* Use flexbox for internal alignment */
-  flex-direction: column; /* Stack heading and button */
-  justify-content: center; /* Center content vertically */
-  align-items: center; /* Center content horizontally */
-  text-align: center; /* Center text on smaller screens */
-  padding: 1rem; /* Reduce padding for smaller screens */
-  color: #003B6D; /* Ensure good contrast */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  color: #003B6D;
 }
 
 .pexpert-banner-heading {
-  font-size: 4rem; /* Adjust font size for heading */
-  margin-bottom: 2rem; /* Space below heading */
-  line-height: 1.2; /* Adjust line height for readability */
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  line-height: 1.2;
 }
 
-/* Media query for tablets and smaller screens */
 @media screen and (max-width: 768px) {
   .pexpert-banner {
-    height: 60vh; /* Reduce height for tablets */
-    min-height: 250px; /* Adjust min-height */
+    height: 60vh;
+    min-height: 250px;
   }
 
   .pexpert-banner-content {
-    padding: 1rem; /* Reduce padding */
-    text-align: center; /* Center-align text */
+    padding: 1rem;
+    text-align: center;
   }
 
   .pexpert-banner-heading {
-    font-size: 2.5rem; /* Reduce font size */
-    margin-bottom: 1.5rem; /* Adjust spacing */
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
   }
 }
 
-/* Media query for phones and very small screens */
 @media screen and (max-width: 480px) {
   .pexpert-banner {
-    height: 50vh; /* Further reduce height */
-    min-height: 200px; /* Adjust min-height */
+    height: 50vh;
+    min-height: 200px;
   }
 
   .pexpert-banner-heading {
-    font-size: 2rem; /* Further reduce font size */
-    margin-bottom: 1rem; /* Adjust spacing */
+    font-size: 2rem;
+    margin-bottom: 1rem;
   }
 }

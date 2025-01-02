@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/dogIntro.css'; // Importing the styles
+import '../css/dogIntro.css';
 
 const DogIntro: React.FC = () => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/catIntro.css'; // Importing the styles
+import '../css/catIntro.css';
 
 const CatIntro: React.FC = () => {
   return (

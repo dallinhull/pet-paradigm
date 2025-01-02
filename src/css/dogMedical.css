@@ -1,70 +1,62 @@
-/* Make sure the container takes up the full height of the viewport */
 .dog-medical {
-    display: flex;                    /* Enable flexbox layout */
-    flex-direction: column;            /* Stack the elements vertically */
-    justify-content: center;           /* Vertically center the elements */
-    align-items: center;               /* Horizontally center the elements */
-    background-color: #D3D3D3;
-    padding: 0 2rem 0;            /* Make the container take full height of the viewport */
-    height: 60vh; /* 50% of the viewport height */
-    min-height: 750px;
-    min-width: 450px;
-    padding: 20px;                     /* Add some padding around the container */
-    text-align: center;                /* Center text horizontally */
-  }
-  
-  /* Style for the h2 element */
-  .dog-medical h2 {
-    color: #003B6D;                    /* Set the color to a dark blue */
-    font-size: 3rem;                   /* Adjust font size */
-    margin-bottom: 20px;               /* Add space below the h2 */
-  }
-  
-  /* Style for the p element */
-  .dog-medical p {
-    color: black;                      /* Set the text color to black */
-    font-size: 1rem;                   /* Adjust font size */
-    margin-bottom: 20px;               /* Add space below the p tag */
-    max-width: 800px;                  /* Set a max width for better readability */
-    line-height: 1.5;                  /* Improve line spacing */
-  }
-  
-  /* Style for the landscape-oriented image */
-  .dog-vet {
-    width: 100%;                        /* Make the image take up the full width of its container */
-    max-width: 600px;                   /* Set a max width for the image */
-    max-height: auto;                       /* Ensure the aspect ratio is preserved */
-    margin-top: 20px;                   /* Add space between the text and the image */
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #D3D3D3;
+  padding: 20px;
+  height: 60vh;
+  min-height: 750px;
+  min-width: 450px;
+  text-align: center;
+}
 
-  .medical-button {
-    margin: 15px 15px;
-  }
-  
-  .pexpert-button-medical {
-    display: inline-block;
-    background-color: #003B6D;
-    color: white;
-    padding: 0.75rem 1.5rem;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s;
-    text-decoration: none;
-  }
-  
-  .pexpert-button-medical:hover {
-    background-color: #5577aa;
-    color: white;
-    transform: scale(1.05); /* Slight zoom on hover */
-  }
+.dog-medical h2 {
+  color: #003B6D;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
 
-  /* Media Query for Mobile Devices */
+.dog-medical p {
+  color: black;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  max-width: 800px;
+  line-height: 1.5;
+}
+
+.dog-vet {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin-top: 20px;
+}
+
+.medical-button {
+  margin: 15px;
+}
+
+.pexpert-button-medical {
+  display: inline-block;
+  background-color: #003B6D;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.pexpert-button-medical:hover {
+  background-color: #5577aa;
+  transform: scale(1.05);
+}
+
 @media (max-width: 768px) {
   .dog-medical {
-      flex-direction: column; /* Stack containers vertically */
-      height: auto; /* Adjust height dynamically */
-      padding: 1rem; /* Adjust padding for smaller screens */
-      min-width: 450px;
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
   }
 
   .dog-medical h2 {
@@ -72,28 +64,25 @@
   }
 
   .dog-medical p {
-      font-size: 1rem; /* Adjust font size for readability */
+    font-size: 1rem;
   }
 
   .dog-vet {
-      max-width: 350px;
-      height: auto; /* Maintain aspect ratio */
-      margin: 0 auto; /* Center the image */
+    max-width: 350px;
+    margin: 0 auto;
   }
 }
 
-
 @media (max-width: 480px) {
-  .dog-medical{
-    padding: 1rem; /* Reduce padding further for mobile */
-    min-width: 450px
+  .dog-medical {
+    padding: 1rem;
   }
 
   .dog-medical p {
-    font-size: 0.85rem; /* Adjust paragraph font size for mobile */
+    font-size: 0.85rem;
   }
 
   .dog-vet {
-  min-width: 350px; /* Reduce image size for mobile */
+    min-width: 350px;
   }
 }

@@ -6,10 +6,12 @@ import DogDiet from '../components/dog_diet';
 import DogGroom from '../components/dog_groom';
 import DogMedical from '../components/dog_medical';
 import Footer from '../components/footer';
+import Head from '../components/head';
 
 const Dogs: React.FC = () => {
   return (
     <div>
+        <Head />
         <Navbar />
         <DogBanner />
         <div id='intro'>

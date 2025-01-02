@@ -1,19 +1,19 @@
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'; // Import necessary routing components
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import "./app.css";
-import Home from './pages/home';  // Import your Home component
-import Dogs from './pages/dogs.tsx'; // Import your About component
+import Home from './pages/home'; 
+import Dogs from './pages/dogs.tsx';
 import Cats from './pages/cats.tsx';
 import Birds from './pages/birds.tsx';
 import Pexpert from './pages/pexpert.tsx';
 import './css/navbar.css';
 
 
-const App = () => {
+const App: React.FC = () => {
   return (
     <Router>
       <div>
         <Routes>
-          {/* Define the routes */}
           <Route path="/" element={<Home />} />
           <Route path="/dogs" element={<Dogs />} />
           <Route path="/cats" element={<Cats />} />

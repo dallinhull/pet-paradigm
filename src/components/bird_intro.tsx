@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/birdIntro.css'; // Importing the styles
+import '../css/birdIntro.css';
 
 const BirdIntro: React.FC = () => {
   return (

@@ -1,12 +1,10 @@
-  /* General Reset */
 * {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
 }
 
 footer {
-  background-color: #6699CC; /* Footer background color */
+  background-color: #003B6D;
   color: white;
   padding: 2rem 0;
   display: flex;
@@ -24,8 +22,8 @@ footer {
 }
 
 .footer-logo {
-  align-self: flex-start; /* Position logo at top-left */
-  margin-bottom: 2rem; /* Space between logo and the navigation */
+  align-self: flex-start;
+  margin-bottom: 2rem;
   margin-left: 40px;
   background-color: white;
 }
@@ -59,7 +57,7 @@ footer {
 }
 
 .footer-nav-item a:hover {
-  color: #D3D3D3; /* Hover effect for links */
+  color: #D3D3D3;
 }
 
 .footer-nav-item ul {
@@ -80,38 +78,37 @@ footer {
   color: #D3D3D3;
 }
 
-/* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
   .footer-container {
     width: 100%;
-    align-items: center; /* Center-align content */
+    align-items: center;
   }
 
   .footer-logo {
-    align-self: center; /* Center the logo */
-    margin-left: 0; /* Remove left margin for centering */
+    align-self: center;
+    margin-left: 0;
   }
 
   .footer-nav {
-    flex-direction: column; /* Stack navigation vertically */
-    align-items: center; /* Center-align navigation items */
-    gap: 2rem; /* Adjust spacing between sections */
-    padding-left: 0; /* Remove left padding */
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding-left: 0;
   }
 
   .footer-nav-item {
-    align-items: center; /* Center-align each navigation section */
+    align-items: center;
   }
 
   .footer-nav-link {
-    text-align: center; /* Center-align links */
+    text-align: center;
   }
 
   .footer-nav-item ul li a {
-    text-align: center; /* Center-align nested links */
+    text-align: center;
   }
 }
 
-  footer ul {
-    padding: 0px;
-  }
+footer ul {
+  padding: 0px;
+}

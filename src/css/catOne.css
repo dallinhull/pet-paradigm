@@ -1,39 +1,32 @@
 .one-section {
-  display: flex; /* Flexbox for horizontal alignment */
-  flex-direction: row; /* Default layout for larger screens */
-  width: 100%; /* Full width */
-  height: auto; /* Adjust height for smaller screens */
+  display: flex;
+  flex-direction: row;
+  width: 100%;
   background-color: white;
-  padding: 2rem 1rem; /* Adjust padding for smaller screens */
-  box-sizing: border-box; /* Include padding in width/height calculation */
-}
-.one-left-container {
-width: 50%; /* Take up 50% of the container's width */
-display: flex; /* Use flexbox for vertical stacking */
-flex-direction: column; /* Stack items vertically */
-justify-content: center; /* Space between items */
-align-items: center; /* Align items to the center */
-padding: 2rem; /* Adjust padding for smaller screens */
-box-sizing: border-box; /* Include padding in width/height calculation */
+  padding: 2rem 1rem;
+  box-sizing: border-box;
 }
 
+.one-left-container,
 .one-right-container {
-  width: 50%; /* Take up 50% of the container's width */
-  display: flex; /* Use flexbox for vertical stacking */
-  flex-direction: column; /* Stack items vertically */
-  justify-content: center; /* Space between items */
-  align-items: center; /* Align items to the center */
-  padding: 2rem; /* Adjust padding for smaller screens */
-  box-sizing: border-box; /* Include padding in width/height calculation */
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
 }
 
-.one-header, .one-description, .one-button-container {
-  text-align: center; /* Center-align text */
+.one-header,
+.one-description,
+.one-button-container {
+  text-align: center;
 }
 
 .one-header h2 {
-  color: black; /* Heading color */
-  font-size: 3rem; /* Adjust font size for smaller screens */
+  color: black;
+  font-size: 3rem;
 }
 
 .one-description {
@@ -41,66 +34,54 @@ box-sizing: border-box; /* Include padding in width/height calculation */
 }
 
 .one-description p {
-  font-size: 1rem; /* Adjust paragraph font size */
-  color: black; /* Light text for readability */
+  font-size: 1rem;
+  color: black;
   max-width: 600px;
 }
 
-.one-right-container {
-  width: 50%; /* Take up the other 50% of the container's width */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .one-image {
-  width: 100%; /* Make image take up full width */
-  height: auto; /* Maintain aspect ratio */
-  object-fit: cover; /* Ensure image covers the container */
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  object-fit: cover;
 }
 
-/* Media Query for Mobile Devices */
+/* Media Query for Tablets and Smaller Screens */
 @media (max-width: 768px) {
   .one-section {
-      flex-direction: column; /* Stack containers vertically */
-      height: auto; /* Adjust height dynamically */
-      padding: 1rem; /* Adjust padding for smaller screens */
-      min-width:450px;
+    flex-direction: column;
+    padding: 1rem;
+    min-width: 450px;
   }
 
-  .one-left-container, .one-right-container {
-      width: 100%; /* Full width for mobile */
-      padding: 1rem; /* Adjust padding */
-      box-sizing: border-box; /* Include padding in width */
+  .one-left-container,
+  .one-right-container {
+    width: 100%;
+    padding: 1rem;
   }
 
   .one-header h2 {
-      font-size: 1.75rem; /* Adjust font size for smaller screens */
+    font-size: 1.75rem;
   }
 
   .one-description p {
-      font-size: 1rem; /* Adjust font size for readability */
+    font-size: 1rem;
   }
 
   .one-image {
-      max-width: 350px;
-      height: auto; /* Maintain aspect ratio */
-      margin: 0 auto; /* Center the image */
+    margin: 0 auto;
   }
 }
 
-
+/* Media Query for Mobile Devices */
 @media (max-width: 480px) {
   .one-section {
-    padding: 1rem; /* Reduce padding further for mobile */
-    min-width: 450px
+    padding: 1rem;
+    min-width: 450px;
   }
 
   .one-description p {
-    font-size: 0.85rem; /* Adjust paragraph font size for mobile */
+    font-size: 0.85rem;
   }
 
-  .one-image {
-  max-width: 350px; /* Reduce image size for mobile */
-  }
 }

@@ -1,48 +1,82 @@
 .dog-banner {
-    width: 100%; /* Full width */
-    min-width: 450px;
-    height: 70vh; /* 40% of viewport height */
-    min-height: 500px;
-    background-image: url('../assets/dog-woods.jpg'); /* Replace with your image */
-    background-size: cover; /* Ensure the image covers the entire area */
-    background-position: top; /* Center the image */
-    display: flex; /* Flexbox for content alignment */
-    align-items: center; /* Center horizontally */
-    padding: 1rem; /* Add some padding */
+  width: 100%;
+  min-width: 450px;
+  height: 70vh;
+  min-height: 500px;
+  background-image: url('../assets/dog-woods.jpg');
+  background-size: cover;
+  background-position: top center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.banner-content-one {
+  width: 30%;
+}
+
+.banner-content-two {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: right;
+  padding-right: 2rem;
+  color: white;
+}
+
+.dog-banner-heading {
+  font-size: 4rem;
+  margin-bottom: 4rem;
+}
+
+.dog-banner-consult-button {
+  text-decoration: none;
+  background-color: #003B6D;
+  color: white;
+  padding: 0.75rem 2.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.dog-banner-consult-button:hover {
+  background-color: #6699CC;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .dog-banner {
+    height: 50vh;
+    flex-direction: column;
+    justify-content: center;
   }
 
-  .banner-content-one {
-    width: 30%;
-  }
-
+  .banner-content-one,
   .banner-content-two {
-    width: 65%; /* Occupy the left 70% of the container */
-    display: flex; /* Use flexbox for internal alignment */
-    flex-direction: column; /* Stack heading and button */
-    justify-content: center; /* Center content vertically */
-    align-items: center;
-    text-align: Right; /* Align text to the left */
-    color: white; /* White text for contrast */  
+    width: 100%;
+    text-align: center;
   }
-  
-  .banner-heading {
-    font-size: 4rem; /* Adjust font size for heading */
-    margin-bottom: 8rem; /* Space below heading */
+
+  .dog-banner-heading {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
   }
-  
-  .consult-button {
-    text-decoration: none; /* Remove underline */
-    background-color: #003B6D; /* Button background color */
-    color: white; /* Button text color */
-    padding: 0.75rem 1.5rem; /* Button padding */
-    border-radius: 5px; /* Rounded corners */
-    font-weight: bold; /* Bold text */
-    transition: background-color 0.3s, transform 0.2s; /* Smooth hover effect */
+
+  .dog-banner-consult-button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
   }
-  
-  .consult-button:hover {
-    background-color: #6699CC; /* Darker shade on hover */
-    transform: scale(1.05); /* Slight zoom on hover */
-    color: white;
+}
+
+@media (max-width: 480px) {
+  .dog-banner {
+    height: 45vh;
   }
-  
+
+  .dog-banner-heading {
+    font-size: 2rem;
+  }
+}

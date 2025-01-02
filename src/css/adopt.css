@@ -1,16 +1,13 @@
-
-  /* General Section Styling */
 .adoption-help-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: auto; /* Adjust height for smaller screens */
-  padding: 2rem 1rem; /* Add padding for better spacing */
+  height: auto;
+  padding: 2rem 1rem;
   background-color: #D3D3D3;
 }
 
-/* Header and Subheader */
 .adoption-header, .adoption-subheader, .adoption-description, .adoption-button {
   width: 100%;
   text-align: center;
@@ -28,17 +25,16 @@
   margin-bottom: 1rem;
 }
 
-/* Square Containers */
 .square-container {
   display: flex;
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
-  justify-content: space-evenly; /* Center items */
-  gap: 1rem; /* Add space between items */
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1rem; 
   margin-top: 2rem;
 }
 
 .square {
-  width: 10%; /* Adjust width for smaller screens */
+  width: 10%;
   min-width: 200px;
   min-height: 200px;
   background-color: #f0f0f0;
@@ -85,7 +81,6 @@
   background-position: center;
 }
 
-/* Button Styling */
 .pexpert-button-adopt {
   display: inline-block;
   background-color: #003B6D;
@@ -102,25 +97,24 @@
   transform: scale(1.05);
 }
 
-/* Responsive Styling */
 @media (max-width: 768px) {
   .adoption-header h2 {
-    font-size: 1.75rem; /* Smaller font size for headers */
+    font-size: 1.75rem;
   }
 
   .square {
-    width: 90%; /* Full width for smaller screens */
-    max-width: 100px; /* Remove max-width constraint */
-    height: auto; /* Adjust height to maintain aspect ratio */
+    width: 90%;
+    max-width: 100px;
+    height: auto;
   }
 
   .adoption-description p {
-    font-size: 0.9rem; /* Adjust paragraph font size */
+    font-size: 0.9rem;
   }
 
   .pexpert-button-adopt {
-    font-size: 0.9rem; /* Adjust button font size */
-    padding: 0.5rem 1rem; /* Adjust padding */
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
   }
 }
 
@@ -130,16 +124,16 @@
   }
 
   .adoption-header h2, .adoption-subheader h3 {
-    font-size: 1rem; /* Smaller font size for very small screens */
+    font-size: 1rem;
   }
 
   .square {
     width: 100%;
-    height: auto; /* Full width for very small screens */
+    height: auto;
   }
 
   .pexpert-button-adopt {
-    font-size: 0.8rem; /* Smaller button font size */
-    padding: 0.5rem 0.75rem; /* Adjust padding */
+    font-size: 0.8rem;
+    padding: 0.5rem 0.75rem;
   }
 }
