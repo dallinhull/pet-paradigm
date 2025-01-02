@@ -1,5 +1,6 @@
 
 import { useState } from 'react';
+import { Link } from "react-router-dom";
 import '../css/Navbar.css';
 import BalloonLogo from '../assets/balloon-dog.png';
 
@@ -14,7 +15,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <div className="logo-container">
-          <a href="/"><img src={BalloonLogo} alt="Logo" className="logo" /></a>
+          <Link to="/"><img src={BalloonLogo} alt="Logo" className="logo" /></Link>
         </div>
 
         <button className="menu-toggle" onClick={toggleMenu}>
@@ -24,50 +25,50 @@ const Navbar = () => {
         <div className={`nav-content ${isMenuOpen ? 'active' : ''}`}>
           <ul className="nav-links">
             <li className="nav-item dropdown">
-              <a href="/" className="nav-link">Home</a>
+              <Link to="/" className="nav-link">Home</Link>
               <ul className="dropdown-menu">
-                <li><a href="/#our-mission">Mission</a></li>
-                <li><a href="/#pexpert-section">Pexpert</a></li>
-                <li><a href="/#benefits">Benefits</a></li>
-                <li><a href="/#adopt">Adopt</a></li>
+                <li><Link to="/#our-mission">Mission</Link></li>
+                <li><Link to="/#pexpert-section">Pexpert</Link></li>
+                <li><Link to="/#benefits">Benefits</Link></li>
+                <li><Link to="/#adopt">Adopt</Link></li>
               </ul>
             </li>
 
             <li className="nav-item dropdown">
-              <a href="/dogs" className="nav-link">Dogs</a>
+              <Link to="/dogs" className="nav-link">Dogs</Link>
               <ul className="dropdown-menu">
-                <li><a href="/dogs/#intro">Info</a></li>
-                <li><a href="/dogs/#diet-exercise">Diet & Exercise</a></li>
-                <li><a href="/dogs/#groom-handling">Grooming & Handling</a></li>
-                <li><a href="/dogs/#vaccinations-medications">Vaccinations & Medications</a></li>
+                <li><Link to="/dogs/#intro">Info</Link></li>
+                <li><Link to="/dogs/#diet-exercise">Diet & Exercise</Link></li>
+                <li><Link to="/dogs/#groom-handling">Grooming & Handling</Link></li>
+                <li><Link to="/dogs/#vaccinations-medications">Vaccinations & Medications</Link></li>
               </ul>
             </li>
 
 
             <li className="nav-item dropdown">
-              <a href="/cats" className="nav-link">Cats</a>
+              <Link to="/cats" className="nav-link">Cats</Link>
               <ul className="dropdown-menu">
-                <li><a href="/cats/#info">Info</a></li>
-                <li><a href="/cats/#zero-to-four-weeks">Zero to Four Weeks</a></li>
-                <li><a href="/cats/#four-weeks-to-one-year">Four Weeks to One Year</a></li>
-                <li><a href="/cats/#one-year-to-seven-years">One Year to Seven Years</a></li>
-                <li><a href="/cats/#seven-years-and-older">Seven Years and Older</a></li>
+                <li><Link to="/cats/#info">Info</Link></li>
+                <li><Link to="/cats/#zero-to-four-weeks">Zero to Four Weeks</Link></li>
+                <li><Link to="/cats/#four-weeks-to-one-year">Four Weeks to One Year</Link></li>
+                <li><Link to="/cats/#one-year-to-seven-years">One Year to Seven Years</Link></li>
+                <li><Link to="/cats/#seven-years-and-older">Seven Years and Older</Link></li>
               </ul>
             </li>
 
             {/* Birds Dropdown */}
             <li className="nav-item dropdown">
-              <a href="/birds" className="nav-link">Birds</a>
+              <Link to="/birds" className="nav-link">Birds</Link>
               <ul className="dropdown-menu">
-                <li><a href="/birds/#info">Info</a></li>
-                <li><a href="/birds/#relational-needs">Relational Needs</a></li>
+                <li><Link to="/birds/#info">Info</Link></li>
+                <li><Link to="/birds/#relational-needs">Relational Needs</Link></li>
               </ul>
             </li>
           </ul>
 
           {/* CTA Button */}
           <div className="cta-container">
-            <a href="/pexpert" className="consult-button">Consult A Pexpert Today!</a>
+            <Link to="/pexpert" className="consult-button">Consult A Pexpert Today!</Link>
           </div>
         </div>
       </div>
