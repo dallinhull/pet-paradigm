@@ -11,7 +11,7 @@ import './css/navbar.css';
 
 const App: React.FC = () => {
   return (
-    <Router>
+    <Router basename="/pet-paradigm">
       <div>
         <Routes>
           <Route path="/" element={<Home />} />
