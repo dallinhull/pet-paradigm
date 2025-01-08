@@ -1,4 +1,4 @@
-import React from "react";
+paradigm/import React from "react";
 import "../css/adopt.css";
 
 const AdoptionHelp: React.FC = () => {
@@ -42,7 +42,7 @@ const AdoptionHelp: React.FC = () => {
       </div>
 
       <div className="adoption-button">
-        <a href="/pexpert" className="pexpert-button-adopt">
+        <a href="/pet-paradigm/pexpert" className="pexpert-button-adopt">
           Request a Consultation
         </a>
       </div>
