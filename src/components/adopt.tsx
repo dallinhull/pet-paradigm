@@ -1,4 +1,4 @@
-import React from "react";
+paradigm/import React from "react";
 import "../css/adopt.css";
 
 const AdoptionHelp: React.FC = () => {
