@@ -3,10 +3,12 @@ import { useState } from 'react';
 import { Link } from "react-router-dom";
 import '../css/Navbar.css';
 import BalloonLogo from '../assets/balloon-dog.png';
+import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const location = useLocation();
+  const isActive = (path) => location.pathname.startsWith(path);
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -24,7 +26,7 @@ const Navbar = () => {
 
         <div className={`nav-content ${isMenuOpen ? 'active' : ''}`}>
           <ul className="nav-links">
-            <li className="nav-item dropdown">
+            <li className={`nav-item dropdown ${isActive("/") ? "active-link" : ""}`}>
               <Link to="/" className="nav-link">Home</Link>
               <ul className="dropdown-menu">
                 <li><Link to="/#our-mission">Mission</Link></li>
