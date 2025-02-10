@@ -8,7 +8,7 @@ import { useLocation } from "react-router-dom";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
-  const isActive = (path) => location.pathname.startsWith(path);
+  const isActive = (path) => location.pathname.startsWith(`/pet-paradigm${path}`);
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -27,7 +27,7 @@ const Navbar = () => {
         <div className={`nav-content ${isMenuOpen ? 'active' : ''}`}>
           <ul className="nav-links">
             <li className={`nav-item dropdown ${isActive("/") ? "active-link" : ""}`}>
-              <Link to="/" className="nav-link">Home</Link>
+              <Link to="/pet-paradigm/" className="nav-link">Home</Link>
               <ul className="dropdown-menu">
                 <li><Link to="/#our-mission">Mission</Link></li>
                 <li><Link to="/#pexpert-section">Pexpert</Link></li>
@@ -37,7 +37,7 @@ const Navbar = () => {
             </li>
 
             <li className={`nav-item dropdown ${isActive("/dogs") ? "active-link" : ""}`}>
-              <Link to="/dogs" className="nav-link">Dogs</Link>
+              <Link to="/pet-paradigm/dogs" className="nav-link">Dogs</Link>
               <ul className="dropdown-menu">
                 <li><Link to="/dogs/#intro">Info</Link></li>
                 <li><Link to="/dogs/#diet-exercise">Diet & Exercise</Link></li>
