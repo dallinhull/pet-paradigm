@@ -36,7 +36,7 @@ const Navbar = () => {
               </ul>
             </li>
 
-            <li className="nav-item dropdown">
+            <li className={`nav-item dropdown ${isActive("/dogs") ? "active-link" : ""}`}>
               <Link to="/dogs" className="nav-link">Dogs</Link>
               <ul className="dropdown-menu">
                 <li><Link to="/dogs/#intro">Info</Link></li>
