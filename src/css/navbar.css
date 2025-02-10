@@ -353,4 +353,9 @@ nav {
     width: 100%;
     text-align: center;
   }
+
+  .active-link > .nav-link {
+  background-color: #676767;
+  }
+
 }
